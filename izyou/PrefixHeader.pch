@@ -16,5 +16,6 @@
 #import "CTHTTPClient.h"
 #import "CTHttpClientUtil.h"
 #import <MagicalRecord/MagicalRecord.h>
+#import <AVOSCloud/AVOSCloud.h>
 
 #endif /* PrefixHeader_pch */

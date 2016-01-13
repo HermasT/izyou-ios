@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AVOSCloud.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MagicalRecord.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,7 +22,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>D1AC3FCCCF0BF63E055DBDBF66A5F652</key>
+		<key>7F0AE4FD15E75CD09EA36ED27FDB07DD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BF4BD45FA0E037AC0DB14589A6580A56</key>
 		<dict>
 			<key>primary</key>
 			<true/>

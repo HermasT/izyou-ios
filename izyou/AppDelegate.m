@@ -29,6 +29,9 @@
     [self setupViewControllers];
     [self.window setRootViewController:self.viewController];
     [self.window makeKeyAndVisible];
+    
+    [self setupSMSService];
+    
     return YES;
 }
 
@@ -93,6 +96,11 @@
         
         index++;
     }
+}
+
+- (void)setupSMSService{
+    [AVOSCloud setApplicationId:@"OmyowiDBY1JW1wgRDtQXcWu4-gzGzoHsz"
+                      clientKey:@"YiUJaOl6QvQk5Sz2Y3l9HdU2"];
 }
 
 @end

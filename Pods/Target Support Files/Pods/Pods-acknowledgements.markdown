@@ -1,6 +1,10 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## AVOSCloud
+
+Copyright 2015 LeanCloud, Inc. See https://leancloud.cn/terms.html
+
 ## MagicalRecord
 
  Copyright (c) 2010-2015, Magical Panda Software, LLC

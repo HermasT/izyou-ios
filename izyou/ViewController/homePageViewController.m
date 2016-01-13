@@ -30,6 +30,18 @@
         
     }];
     
+    [AVOSCloud requestSmsCodeWithPhoneNumber:@"13100697681"
+                                     appName:@"肥猪仔仔"
+                                   operation:@"具体操作名称"
+                                  timeToLive:10
+                                    callback:^(BOOL succeeded, NSError *error) {
+                                        if (succeeded) {
+                                            // 发送成功
+                                            //短信格式类似于：
+                                            //您正在{某应用}中进行{具体操作名称}，您的验证码是:{123456}，请输入完整验证，有效期为:{10}分钟
+                                        }
+                                    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
