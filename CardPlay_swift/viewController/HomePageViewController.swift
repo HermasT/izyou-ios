@@ -35,7 +35,7 @@ class HomePageViewController: UIViewController {
                     }
                 }
             }
-            }, faild: { (operation: AFHTTPRequestOperation!,error: NSError!) in
+            }, faild: { (peration: AFHTTPRequestOperation!,error: NSError!) in
               //  print(error)
                 
         })

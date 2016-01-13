@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		496A598CB3AC7837499CBEEC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB0CEB95D199D5CDF461583 /* libPods.a */; };
+		9C90EF171C46390900A65225 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C90EF161C46390900A65225 /* CoreData.framework */; };
 		9CFF688C1C3F55C800384B3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF688B1C3F55C800384B3E /* main.m */; };
 		9CFF688F1C3F55C800384B3E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF688E1C3F55C800384B3E /* AppDelegate.m */; };
 		9CFF68971C3F55C800384B3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CFF68961C3F55C800384B3E /* Assets.xcassets */; };
@@ -63,6 +65,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13760672D0FC54B6BFE590FC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		3FB0CEB95D199D5CDF461583 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C90EEF91C462C7C00A65225 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		9C90EF161C46390900A65225 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		9CFF68871C3F55C800384B3E /* izyou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = izyou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFF688B1C3F55C800384B3E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9CFF688D1C3F55C800384B3E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -147,6 +153,7 @@
 		9CFF6B241C46266300384B3E /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		9CFF6B251C46266300384B3E /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		9CFF6B261C46266300384B3E /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		CBD1ED2D4B807521F0286FBA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,17 +161,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C90EF171C46390900A65225 /* CoreData.framework in Frameworks */,
+				496A598CB3AC7837499CBEEC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C2BFAE625ADBC01E80C1142 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C90EF161C46390900A65225 /* CoreData.framework */,
+				3FB0CEB95D199D5CDF461583 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9CFF687E1C3F55C800384B3E = {
 			isa = PBXGroup;
 			children = (
 				9CFF68891C3F55C800384B3E /* izyou */,
 				9CFF68881C3F55C800384B3E /* Products */,
+				BAB4B289C00A79E7DF094B79 /* Pods */,
+				3C2BFAE625ADBC01E80C1142 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,6 +208,7 @@
 				9CFF68961C3F55C800384B3E /* Assets.xcassets */,
 				9CFF68981C3F55C800384B3E /* LaunchScreen.storyboard */,
 				9CFF688A1C3F55C800384B3E /* Supporting Files */,
+				9C90EEF91C462C7C00A65225 /* PrefixHeader.pch */,
 			);
 			path = izyou;
 			sourceTree = "<group>";
@@ -338,6 +359,15 @@
 			path = "UIKit+AFNetworking";
 			sourceTree = "<group>";
 		};
+		BAB4B289C00A79E7DF094B79 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13760672D0FC54B6BFE590FC /* Pods.debug.xcconfig */,
+				CBD1ED2D4B807521F0286FBA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -345,9 +375,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CFF689E1C3F55C800384B3E /* Build configuration list for PBXNativeTarget "izyou" */;
 			buildPhases = (
+				B0911035DD8B67EDC4AEA92A /* Check Pods Manifest.lock */,
 				9CFF68831C3F55C800384B3E /* Sources */,
 				9CFF68841C3F55C800384B3E /* Frameworks */,
 				9CFF68851C3F55C800384B3E /* Resources */,
+				0A56949F884C96EF3186506C /* Embed Pods Frameworks */,
+				1CBAD6CE62B557682354095B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -425,6 +458,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A56949F884C96EF3186506C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1CBAD6CE62B557682354095B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0911035DD8B67EDC4AEA92A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9CFF68831C3F55C800384B3E /* Sources */ = {
@@ -558,12 +639,14 @@
 		};
 		9CFF689F1C3F55C800384B3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13760672D0FC54B6BFE590FC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = izyou/PrefixHeader.pch;
 				INFOPLIST_FILE = izyou/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -576,12 +659,14 @@
 		};
 		9CFF68A01C3F55C800384B3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBD1ED2D4B807521F0286FBA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = izyou/PrefixHeader.pch;
 				INFOPLIST_FILE = izyou/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
