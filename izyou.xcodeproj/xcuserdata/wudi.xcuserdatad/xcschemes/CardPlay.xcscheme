@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9CFF68861C3F55C800384B3E"
-               BuildableName = "CardPlay.app"
-               BlueprintName = "CardPlay"
-               ReferencedContainer = "container:CardPlay.xcodeproj">
+               BuildableName = "izyou.app"
+               BlueprintName = "izyou"
+               ReferencedContainer = "container:izyou.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9CFF68861C3F55C800384B3E"
-            BuildableName = "CardPlay.app"
-            BlueprintName = "CardPlay"
-            ReferencedContainer = "container:CardPlay.xcodeproj">
+            BuildableName = "izyou.app"
+            BlueprintName = "izyou"
+            ReferencedContainer = "container:izyou.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9CFF68861C3F55C800384B3E"
-            BuildableName = "CardPlay.app"
-            BlueprintName = "CardPlay"
-            ReferencedContainer = "container:CardPlay.xcodeproj">
+            BuildableName = "izyou.app"
+            BlueprintName = "izyou"
+            ReferencedContainer = "container:izyou.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9CFF68861C3F55C800384B3E"
-            BuildableName = "CardPlay.app"
-            BlueprintName = "CardPlay"
-            ReferencedContainer = "container:CardPlay.xcodeproj">
+            BuildableName = "izyou.app"
+            BlueprintName = "izyou"
+            ReferencedContainer = "container:izyou.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -148,8 +148,8 @@
 		9CFF6A801C434C1400384B3E /* CTHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CTHTTPClient.m; path = util/CTHTTPClient.m; sourceTree = "<group>"; };
 		9CFF6A831C434D3D00384B3E /* NSTimer+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSTimer+BlocksKit.h"; path = "BlockKit/NSTimer+BlocksKit.h"; sourceTree = "<group>"; };
 		9CFF6A841C434D3D00384B3E /* NSTimer+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+BlocksKit.m"; path = "BlockKit/NSTimer+BlocksKit.m"; sourceTree = "<group>"; };
-		9CFF6A861C43565100384B3E /* CTHttpClientUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTHttpClientUtil.h; sourceTree = "<group>"; };
-		9CFF6A871C43565100384B3E /* CTHttpClientUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTHttpClientUtil.m; sourceTree = "<group>"; };
+		9CFF6A861C43565100384B3E /* CTHttpClientUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTHttpClientUtil.h; path = util/CTHttpClientUtil.h; sourceTree = "<group>"; };
+		9CFF6A871C43565100384B3E /* CTHttpClientUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CTHttpClientUtil.m; path = util/CTHttpClientUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
