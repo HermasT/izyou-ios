@@ -4,17 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AVOSCloud.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>MagicalRecord.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDCycleScrollView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>7F0AE4FD15E75CD09EA36ED27FDB07DD</key>
+		<key>D9FABEBFFAF2698AE8A084676D194263</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BF4BD45FA0E037AC0DB14589A6580A56</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D54AB3ECEB9A8FBA15D4F73CBE326692</key>
+		<key>E085AF69142A37A8D85940D32B026003</key>
 		<dict>
 			<key>primary</key>
 			<true/>

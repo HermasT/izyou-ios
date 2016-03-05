@@ -58,6 +58,9 @@
  */
 @property (nonatomic, getter=isTabBarHidden) BOOL tabBarHidden;
 
+@property (nonatomic,getter=isTabBarHead) BOOL tabBarHead;
+
+
 /**
  * Changes the visibility of the tab bar.
  */

@@ -11,9 +11,10 @@
 #import "RDVTabBarItem.h"
 
 
-#import "secondViewController.h"
-#import "thirdViewController.h"
-#import "homePageViewController.h"
+#import "HomePageViewController.h"
+#import "CoursesViewController.h"
+#import "QuestionBankViewController.h"
+#import "MoreViewController.h"
 
 @interface AppDelegate ()
 
@@ -30,7 +31,6 @@
     [self.window setRootViewController:self.viewController];
     [self.window makeKeyAndVisible];
     
-    [self setupSMSService];
     
     return YES;
 }
@@ -60,21 +60,26 @@
 #pragma mark 
 
 - (void)setupViewControllers {
-    UIViewController *firstViewController1 = [[homePageViewController  alloc] init];
-    UIViewController *firstNavigationController = [[UINavigationController alloc]
-                                                   initWithRootViewController:firstViewController1];
+    UIViewController *firstVC = [[HomePageViewController  alloc] init];
+    UIViewController *firstNavi = [[UINavigationController alloc]
+                                                   initWithRootViewController:firstVC];
     
-    UIViewController *secondViewController1 = [[secondViewController alloc] init];
-    UIViewController *secondNavigationController = [[UINavigationController alloc]
-                                                    initWithRootViewController:secondViewController1];
+    UIViewController *secondVC = [[CoursesViewController alloc] init];
+    UIViewController *secondNavi = [[UINavigationController alloc]
+                                                    initWithRootViewController:secondVC];
     
-    UIViewController *thirdViewController1 = [[thirdViewController alloc] init];
-    UIViewController *thirdNavigationController = [[UINavigationController alloc]
-                                                   initWithRootViewController:thirdViewController1];
+    UIViewController *thirdVC = [[QuestionBankViewController alloc] init];
+    UIViewController *thirdNavi = [[UINavigationController alloc]
+                                                   initWithRootViewController:thirdVC];
+    
+    
+    UIViewController *forthVC = [[MoreViewController alloc] init];
+    UIViewController *forthNavi = [[UINavigationController alloc]
+                                                   initWithRootViewController:forthVC];
     
     RDVTabBarController *tabBarController = [[RDVTabBarController alloc] init];
-    [tabBarController setViewControllers:@[firstNavigationController, secondNavigationController,
-                                           thirdNavigationController]];
+    [tabBarController setViewControllers:@[firstNavi, secondNavi,
+                                           thirdNavi,forthNavi]];
     self.viewController = tabBarController;
     
     [self customizeTabBarForController:tabBarController];
@@ -82,8 +87,8 @@
 - (void)customizeTabBarForController:(RDVTabBarController *)tabBarController {
     UIImage *finishedImage = [UIImage imageNamed:@"tabbar_selected_background"];
     UIImage *unfinishedImage = [UIImage imageNamed:@"tabbar_normal_background"];
-    NSArray *tabBarItemImages = @[@"first", @"second", @"third"];
-    
+    NSArray *tabBarItemImages = @[@"first", @"second", @"third",@"third"];
+    NSArray *tabBarItemTitle = @[@"首页",@"课程",@"题库",@"更多"];
     NSInteger index = 0;
     for (RDVTabBarItem *item in [[tabBarController tabBar] items]) {
         [item setBackgroundSelectedImage:finishedImage withUnselectedImage:unfinishedImage];
@@ -93,14 +98,14 @@
                                                         [tabBarItemImages objectAtIndex:index]]];
         
         [item setFinishedSelectedImage:selectedimage withFinishedUnselectedImage:unselectedimage];
-        
+        item.title = [tabBarItemTitle objectAtIndex:index];
         index++;
     }
 }
 
 - (void)setupSMSService{
-    [AVOSCloud setApplicationId:@"OmyowiDBY1JW1wgRDtQXcWu4-gzGzoHsz"
-                      clientKey:@"YiUJaOl6QvQk5Sz2Y3l9HdU2"];
+//    [AVOSCloud setApplicationId:@"OmyowiDBY1JW1wgRDtQXcWu4-gzGzoHsz"
+//                      clientKey:@"YiUJaOl6QvQk5Sz2Y3l9HdU2"];
 }
 
 @end

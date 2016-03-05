@@ -1,6 +1,7 @@
 xcodeproj 'izyou.xcodeproj'
-pod "MagicalRecord" 
-pod 'AVOSCloud'
+#pod "MagicalRecord" 
+#pod 'AVOSCloud'
+pod 'SDCycleScrollView' 
 
 # 如果使用实时通信功能，可以添加：
 #pod 'AVOSCloudIM'

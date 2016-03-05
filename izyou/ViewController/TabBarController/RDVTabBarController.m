@@ -208,7 +208,7 @@
             [[weakSelf tabBar] setHidden:NO];
         }
         
-        [[weakSelf tabBar] setFrame:CGRectMake(0, tabBarStartingY, viewSize.width, tabBarHeight)];
+        [[weakSelf tabBar] setFrame:CGRectMake(0, self.isTabBarHead ?64: tabBarStartingY, viewSize.width, tabBarHeight)];
         [[weakSelf contentView] setFrame:CGRectMake(0, 0, viewSize.width, contentViewHeight)];
     };
     

@@ -15,7 +15,6 @@
 #import "UIImageView+AFNetworking.h"
 #import "CTHTTPClient.h"
 #import "CTHttpClientUtil.h"
-#import <MagicalRecord/MagicalRecord.h>
-#import <AVOSCloud/AVOSCloud.h>
+#import "izyouDefine.h"
 
 #endif /* PrefixHeader_pch */
