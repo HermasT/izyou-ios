@@ -10,12 +10,13 @@
 #import "SudoGameViewController.h"
 #import <SDCycleScrollView.h>
 
-@interface HomePageViewController ()<SDCycleScrollViewDelegate>
-@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@interface HomePageViewController ()<SDCycleScrollViewDelegate,UICollectionViewDataSource,UICollectionViewDelegate>
 
 @property (strong, nonatomic) IBOutlet SDCycleScrollView *bannerScrollView;
+@property (weak, nonatomic) IBOutlet UICollectionView *entraceCollectionView;
 @end
 
+static NSString *identifier = @"cell";
 @implementation HomePageViewController
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -47,6 +48,11 @@
     _bannerScrollView.delegate = self;
     _bannerScrollView.titlesGroup = titles;
     _bannerScrollView.placeholderImage = [UIImage imageNamed:@"placeholder"];
+    
+    _entraceCollectionView.delegate = self;
+    _entraceCollectionView.dataSource = self;
+    _entraceCollectionView.backgroundColor = [UIColor clearColor];
+    [_entraceCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:identifier];
     
 
 }
@@ -96,6 +102,38 @@
 - (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
 {
     
+}
+
+#pragma mark UICollectionViewDataSource
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return 4;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    UICollectionViewCell *cell = [_entraceCollectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor redColor];
+    CGRect frame = cell.frame;
+    cell.frame = frame;
+    
+    return cell;
+}
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
+{
+    return 10;
+}
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
+    return 10;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return CGSizeMake((izyScreenWidth-30)/2, (izyScreenWidth-30)/2);
+}
+
+#pragma mark UICollectionViewDelegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"%tu",indexPath.row);
 }
 
 

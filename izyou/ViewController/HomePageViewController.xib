@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomePageViewController">
             <connections>
+                <outlet property="entraceCollectionView" destination="zWj-i4-Gj2" id="0DQ-GW-3vV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,13 +16,6 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwn-A8-bhH">
-                    <rect key="frame" x="145" y="183" width="30" height="30"/>
-                    <state key="normal" title="6X6"/>
-                    <connections>
-                        <action selector="playSudoGame:" destination="-1" eventType="touchUpInside" id="hEP-gy-Ohs"/>
-                    </connections>
-                </button>
                 <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0d-12-lba">
                     <rect key="frame" x="145" y="221" width="30" height="30"/>
                     <state key="normal" title="9X9"/>
@@ -29,8 +23,30 @@
                         <action selector="playSudoGame:" destination="-1" eventType="touchUpInside" id="yXZ-8a-LZo"/>
                     </connections>
                 </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="zWj-i4-Gj2">
+                    <rect key="frame" x="8" y="246" width="304" height="322"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BW8-Lp-UiW">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwn-A8-bhH">
+                    <rect key="frame" x="100" y="221" width="30" height="30"/>
+                    <state key="normal" title="6X6"/>
+                    <connections>
+                        <action selector="playSudoGame:" destination="-1" eventType="touchUpInside" id="hEP-gy-Ohs"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zWj-i4-Gj2" firstAttribute="top" secondItem="kwn-A8-bhH" secondAttribute="bottom" constant="-5" id="1sL-K0-ypZ"/>
+                <constraint firstAttribute="bottom" secondItem="zWj-i4-Gj2" secondAttribute="bottom" id="RgK-6z-BzR"/>
+                <constraint firstItem="zWj-i4-Gj2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="XWh-eK-k6B"/>
+                <constraint firstAttribute="trailing" secondItem="zWj-i4-Gj2" secondAttribute="trailing" constant="8" id="e6D-Ig-Jrj"/>
+            </constraints>
             <point key="canvasLocation" x="320" y="251"/>
         </view>
     </objects>
