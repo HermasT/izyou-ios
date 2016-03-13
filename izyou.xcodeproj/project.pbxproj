@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		496A598CB3AC7837499CBEEC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB0CEB95D199D5CDF461583 /* libPods.a */; };
+		9C0532C81C945059008AC22F /* SMS_SDKLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C0532C31C945059008AC22F /* SMS_SDKLocalizable.strings */; };
+		9C0532C91C94505A008AC22F /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0532C51C945059008AC22F /* MOBFoundation.framework */; };
+		9C0532CA1C94505A008AC22F /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0532C61C945059008AC22F /* SMS_SDK.framework */; };
+		9C0532CC1C945091008AC22F /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0532CB1C945091008AC22F /* libicucore.tbd */; };
+		9C0532CE1C945099008AC22F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0532CD1C945099008AC22F /* libz.tbd */; };
+		9C0532D01C9450A4008AC22F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0532CF1C9450A4008AC22F /* MessageUI.framework */; };
+		9C0532D21C9450AE008AC22F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0532D11C9450AE008AC22F /* JavaScriptCore.framework */; };
+		9C0532D41C9450BB008AC22F /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0532D31C9450BB008AC22F /* libstdc++.tbd */; };
+		9C0532D71C95264E008AC22F /* izyHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0532D61C95264E008AC22F /* izyHttpClient.m */; };
 		9C90EF171C46390900A65225 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C90EF161C46390900A65225 /* CoreData.framework */; };
 		9C9646341C4E3DEF00E3672B /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9646321C4E3DEF00E3672B /* HomePageViewController.m */; };
 		9C9646351C4E3DEF00E3672B /* HomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C9646331C4E3DEF00E3672B /* HomePageViewController.xib */; };
@@ -76,6 +85,17 @@
 /* Begin PBXFileReference section */
 		13760672D0FC54B6BFE590FC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		3FB0CEB95D199D5CDF461583 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C0532C41C945059008AC22F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SMS_SDKLocalizable.strings; sourceTree = "<group>"; };
+		9C0532C51C945059008AC22F /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
+		9C0532C61C945059008AC22F /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMS_SDK.framework; sourceTree = "<group>"; };
+		9C0532C71C945059008AC22F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SMS_SDKLocalizable.strings"; sourceTree = "<group>"; };
+		9C0532CB1C945091008AC22F /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		9C0532CD1C945099008AC22F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		9C0532CF1C9450A4008AC22F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		9C0532D11C9450AE008AC22F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/PrivateFrameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		9C0532D31C9450BB008AC22F /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		9C0532D51C95264E008AC22F /* izyHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = izyHttpClient.h; sourceTree = "<group>"; };
+		9C0532D61C95264E008AC22F /* izyHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = izyHttpClient.m; sourceTree = "<group>"; };
 		9C90EEF91C462C7C00A65225 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9C90EF161C46390900A65225 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		9C9646311C4E3DEF00E3672B /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
@@ -185,6 +205,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C0532D41C9450BB008AC22F /* libstdc++.tbd in Frameworks */,
+				9C0532D21C9450AE008AC22F /* JavaScriptCore.framework in Frameworks */,
+				9C0532D01C9450A4008AC22F /* MessageUI.framework in Frameworks */,
+				9C0532CE1C945099008AC22F /* libz.tbd in Frameworks */,
+				9C0532CC1C945091008AC22F /* libicucore.tbd in Frameworks */,
+				9C0532C91C94505A008AC22F /* MOBFoundation.framework in Frameworks */,
+				9C0532CA1C94505A008AC22F /* SMS_SDK.framework in Frameworks */,
 				9C90EF171C46390900A65225 /* CoreData.framework in Frameworks */,
 				496A598CB3AC7837499CBEEC /* libPods.a in Frameworks */,
 			);
@@ -196,10 +223,25 @@
 		3C2BFAE625ADBC01E80C1142 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9C0532D31C9450BB008AC22F /* libstdc++.tbd */,
+				9C0532D11C9450AE008AC22F /* JavaScriptCore.framework */,
+				9C0532CF1C9450A4008AC22F /* MessageUI.framework */,
+				9C0532CD1C945099008AC22F /* libz.tbd */,
+				9C0532CB1C945091008AC22F /* libicucore.tbd */,
 				9C90EF161C46390900A65225 /* CoreData.framework */,
 				3FB0CEB95D199D5CDF461583 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C0532C21C945059008AC22F /* SMS_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				9C0532C31C945059008AC22F /* SMS_SDKLocalizable.strings */,
+				9C0532C51C945059008AC22F /* MOBFoundation.framework */,
+				9C0532C61C945059008AC22F /* SMS_SDK.framework */,
+			);
+			path = SMS_SDK;
 			sourceTree = "<group>";
 		};
 		9CA5C5E91C6AF7C800B7947E /* View */ = {
@@ -333,6 +375,8 @@
 				9CFF6AF21C4625C900384B3E /* CTHttpClientUtil.m */,
 				9CFF6AEE1C46259A00384B3E /* CTHTTPClient.h */,
 				9CFF6AEF1C46259A00384B3E /* CTHTTPClient.m */,
+				9C0532D51C95264E008AC22F /* izyHttpClient.h */,
+				9C0532D61C95264E008AC22F /* izyHttpClient.m */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -340,6 +384,7 @@
 		9CFF6AF41C46260000384B3E /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
+				9C0532C21C945059008AC22F /* SMS_SDK */,
 				9CFF6AF71C46262500384B3E /* UIKit+AFNetworking */,
 				9CFF6AF61C46261800384B3E /* BlockKit */,
 				9CFF6AF51C46260700384B3E /* AFNetworking */,
@@ -460,6 +505,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 9CFF687E1C3F55C800384B3E;
 			productRefGroup = 9CFF68881C3F55C800384B3E /* Products */;
@@ -498,6 +544,7 @@
 				9C96464F1C4E43DE00E3672B /* LoginViewController.xib in Resources */,
 				9CFF68C71C3F5CC800384B3E /* first_selected.png in Resources */,
 				9CFF68C91C3F5CC800384B3E /* navigationbar_background_tall.png in Resources */,
+				9C0532C81C945059008AC22F /* SMS_SDKLocalizable.strings in Resources */,
 				9CFF68C81C3F5CC800384B3E /* first_selected@2x.png in Resources */,
 				9CFF68CD1C3F5CC800384B3E /* second_normal.png in Resources */,
 				9CFF68D21C3F5CC800384B3E /* tabbar_normal_background@2x.png in Resources */,
@@ -582,6 +629,7 @@
 				9CFF6B131C46265C00384B3E /* NSTimer+BlocksKit.m in Sources */,
 				9C9646431C4E3F1A00E3672B /* QuestionBankViewController.m in Sources */,
 				9CFF6B0F1C46265400384B3E /* UIRefreshControl+AFNetworking.m in Sources */,
+				9C0532D71C95264E008AC22F /* izyHttpClient.m in Sources */,
 				9CFF6AF31C4625C900384B3E /* CTHttpClientUtil.m in Sources */,
 				9CFF6B281C46266300384B3E /* AFHTTPRequestOperationManager.m in Sources */,
 				9CFF6B091C46265400384B3E /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -602,6 +650,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		9C0532C31C945059008AC22F /* SMS_SDKLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C0532C41C945059008AC22F /* en */,
+				9C0532C71C945059008AC22F /* zh-Hans */,
+			);
+			name = SMS_SDKLocalizable.strings;
+			sourceTree = "<group>";
+		};
 		9CFF68981C3F55C800384B3E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -702,6 +759,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/izyou/3rd/SMS_SDK",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 				GCC_PREFIX_HEADER = izyou/PrefixHeader.pch;
 				INFOPLIST_FILE = izyou/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -723,6 +785,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/izyou/3rd/SMS_SDK",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 				GCC_PREFIX_HEADER = izyou/PrefixHeader.pch;
 				INFOPLIST_FILE = izyou/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

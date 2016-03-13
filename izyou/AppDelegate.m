@@ -15,6 +15,7 @@
 #import "CoursesViewController.h"
 #import "QuestionBankViewController.h"
 #import "MoreViewController.h"
+#import <SMS_SDK/SMSSDK.h>
 
 @interface AppDelegate ()
 
@@ -31,7 +32,7 @@
     [self.window setRootViewController:self.viewController];
     [self.window makeKeyAndVisible];
     
-    
+     [self setupSMSService];
     return YES;
 }
 
@@ -104,8 +105,8 @@
 }
 
 - (void)setupSMSService{
-//    [AVOSCloud setApplicationId:@"OmyowiDBY1JW1wgRDtQXcWu4-gzGzoHsz"
-//                      clientKey:@"YiUJaOl6QvQk5Sz2Y3l9HdU2"];
+//    [SMSSDK registerApp:appKey
+//             withSecret:appSecret];
 }
 
 @end
